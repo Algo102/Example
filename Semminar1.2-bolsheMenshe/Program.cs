@@ -1,10 +1,10 @@
 ﻿Console.WriteLine("Программа определяет какое число из двух больше");
 
 Console.WriteLine("Введите первое число: ");
-int number1 = int.Parse(Console.ReadLine()); 
+int number1 = int.Parse(Console.ReadLine() ?? "0"); 
 
 Console.WriteLine("Введите второе число: ");
-int number2 = int.Parse(Console.ReadLine()); 
+int number2 = int.Parse(Console.ReadLine() ?? "0"); 
 
 if (number1>number2) // int max = number1 > number2 ? number1 : number2
 {
