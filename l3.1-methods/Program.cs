@@ -54,3 +54,17 @@ string Method4(int count, string text)
 
 string res = Method4(4, "Проба ");
 Console.WriteLine(res);
+
+// Вид 4 через for
+string Method41(int count, string text)
+{
+  string result = String.Empty;
+  for (int i = 0; i < count; i++)
+  {
+    result = result + text;
+  }
+  return result;
+}
+
+string res41 = Method41(4, "for ");
+Console.WriteLine(res41);
